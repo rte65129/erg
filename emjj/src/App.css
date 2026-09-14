@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #edeef3;
+}
+
+header {
+    background-color: #138496;
+    min-height: 295px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    h1 {
+        font-size: 72px;
+        color: #ccf8ff;
+    }
+
+    p {
+        font-size: 21px;
+        color: #ccf8ff;
+        opacity: 0.75;
+    }
+    
+    position: relative;
+    
+    input {
+        width: 820px;
+        max-width: 90%;
+        height: 62px;
+        padding-left: 32px;
+        font-size: 24;
+
+        position: absolute;
+        bottom: -32px;
+    }
+}
+
+main {
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: 316px 316px 316px;
+    grid-template-rows: 176px;
+
+    width: 990px;
+    margin: 0 auto;
+
+    gap: 20px;
+
+    .card {
+        width: 316px;
+        height: 185px;
+
+        background-color: #fff;
+        border-radius: 4px;
+        box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        padding: 24px;
+        gap: 14px;
+
+        .symbol {
+            font-size: 48px;
+        }
+        .title {
+            font-size: 17px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .keyWord {
+            font-size: 12px;
+            color:  #3f444a;
+        }
+    }
+}
