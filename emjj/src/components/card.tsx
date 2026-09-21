@@ -1,15 +1,13 @@
-export interface IEmoji {
-    symbolm: string,
-    title: string,
-    keyWord: string
-}
+import type { IEmojiItem } from '../api/emojiApi';
 
-export default function Card( {symbolm, title, keyWord}: IEmoji ){
-    return (
-        <div className="card">
-          <p className="symbol">{symbolm}</p>
-          <p className="title">{title}</p>
-          <p className="keyWords">{keyWord}</p>    
-        </div>
-    )
+export type IEmoji = IEmojiItem;
+
+export default function Card({ emoji, title, keywords }: IEmoji) {
+  return (
+    <div className="card">
+      <p className="symbol">{emoji}</p>
+      <p className="title">{title}</p>
+      <p className="keyWords">{keywords}</p>
+    </div>
+  );
 }
